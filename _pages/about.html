@@ -1,0 +1,64 @@
+---
+title: About
+permalink: /:basename
+---
+<div class="about-intro">
+	<div class="about-intro-text paragraph-normal">
+		{{ site.data.about.intro | markdownify }}
+	</div>
+	<div class="about-intro-image">
+		<img src="{{ site.data.about.profile-picture }}" alt="">
+	</div>
+</div>
+
+<div class="about-attributes">
+	<div class="about-experience">
+		<h1>Experience</h1>
+		<dl class="relational-list">
+			{% for experience-item in site.data.about.experience %}
+				<dt class="relational-list__title">{{ experience-item.position | markdownify }}</dt>
+				<dd class="relational-list__description relational-list__description-period">{{ experience-item.period |
+				markdownify }}</dd>
+				<dd class="relational-list__description">{{ experience-item.company | markdownify }}</dd>
+			{% endfor %}
+		</dl>
+	</div>
+	<div class="about-education">
+		<h1>Education</h1>
+		<dl class="relational-list">
+			{% for education-item in site.data.about.education %}
+				<dt class="relational-list__title">{{ education-item.course | markdownify }}</dt>
+				<dd class="relational-list__description relational-list__description-period">{{ education-item.period |
+				markdownify }}</dd>
+				<dd class="relational-list__description">{{ education-item.place | markdownify }}</dd>
+			{% endfor %}
+		</dl>
+	</div>
+	<div class="about-competitions">
+		<h1>Competitions</h1>
+		<dl class="relational-list">
+			{% for education-item in site.data.about.education %}
+				<dt class="relational-list__title">{{ education-item.course | markdownify }}</dt>
+				<dd class="relational-list__description relational-list__description-period">{{ education-item.period |
+				markdownify }}</dd>
+				<dd class="relational-list__description">{{ education-item.place | markdownify }}</dd>
+			{% endfor %}
+		</dl>
+	</div>
+	<div class="about-tools">
+		<h1>Tool & technologies</h1>
+		<ul class="dashed-list">
+			{% for tool in site.data.about.tools %}
+				<li>{{ tool | markdownify }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="about-skills">
+		<h1>Skills</h1>
+		<ul class="dashed-list">
+			{% for skill in site.data.about.skills %}
+				<li>{{ skill | markdownify }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

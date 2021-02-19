@@ -1,0 +1,45 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
+include:
+  - _pages # All pages in folder will become html pages in rool (due to permalinks)
+
+exclude:
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# :title - Page served from file basename or front matter title: www.site.com/title/
+# permalink: /:title/
+
+collections_dir: my_collections # gather collections inside collections_dir
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<!-- <link rel="stylesheet" href="/assets/css/native.css"> -->
+
+  <title>{{ page.title }}</title>
+</head>
+<body>
+
+  <div class="global-wrapper">
+    {% include navigation.html %}
+    
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
+    
+  </div>
+
+  {% include footer.html %}
+
+</body>
+</html>

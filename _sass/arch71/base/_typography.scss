@@ -1,0 +1,125 @@
+/**
+* Typography
+* =================================
+* - Base
+* - Paragraphs
+* - Headings
+* - Type sizes
+* - Misc
+* - Utilities
+*/
+html {
+  font-size: $font-size-base;
+  font-family: $font-family-primary;
+  color: $color-text;
+  line-height: $line-height-normal;
+  text-redering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  list-style-image: none;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-left: 3em; // List items indent
+}
+
+
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  list-style-image: none;
+  margin-bottom: 1rem;
+}
+
+ol li {
+  margin-left: 3em; // List items indent
+}
+
+h2, h3, h4, h5, h6,
+.type-level-h2, .type-level-h3, .type-level-h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  background-color: white;
+  display: inline-block;
+}
+
+
+/* Headings */
+h1, .type-level-h1 {
+  font-family: $font-family-secondary;
+  font-size: $font-size-h1;
+  line-height: $line-height-normal * 1em;
+}
+
+h2, .type-level-h2 {
+  font-family: $font-family-secondary;
+  font-size: $font-size-h2;
+  line-height: $line-height-normal * 1em;
+}
+
+h3, .type-level-h3 {
+  font-family: $font-family-secondary;
+  font-size: $font-size-h3;
+  line-height: $line-height-normal * 1em;
+}
+
+h4, .type-level-h4 {
+  font-family: $font-family-secondary;
+  font-size: $font-size-h4;
+  line-height: $line-height-normal * 1em;
+}
+
+.title-label {
+  text-transform: uppercase;
+}
+
+/* Paragraphs */
+.paragraph-normal, .paragraph-normal p {
+  margin-bottom: $paragraph-spacing;
+  font-size: $font-size-body-normal;
+}
+
+.paragraph-small, .paragraph-small p {
+  margin-bottom: $paragraph-spacing;
+  font-size: $font-size-body-small;
+}
+
+.paragraph-large, .paragraph-large p {
+  margin-bottom: #paragraph-spacing;
+  font-size: $font-size-body-large;
+
+  a {
+    border-bottom-width: 1.5px;
+  }
+}
+
+.paragraph-huge, .paragraph-huge p {
+  margin-bottom: $paragraph-spacing;
+  font-size: $font-size-body-huge;
+  line-height: $line-height-wider;
+
+  a {
+    border-bottom-width: 2px;
+  }
+}
+
+/* Figures */
+figcaption {
+  font-size: $font-size-body-tiny;
+  line-height: $line-height-normal;
+}

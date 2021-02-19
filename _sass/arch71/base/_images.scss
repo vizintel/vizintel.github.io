@@ -1,0 +1,14 @@
+img {
+  display: block;
+	//Fix blink opacity bug
+  // -webkit-transform: translateZ(0);
+
+  &.border {
+  	border: 2px solid $border-color;
+  	border-radius: 0.5rem;
+  }
+}
+
+figure {
+  margin: 0;
+}
