@@ -1,0 +1,16 @@
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/ali/.rbenv/versions/2.7.1/bin/ruby -I /Users/ali/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20210219-30278-11ci4k2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20210219-30278-1t3syer

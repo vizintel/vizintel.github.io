@@ -1,0 +1,16 @@
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/ali/.rbenv/versions/2.7.1/bin/ruby -I /Users/ali/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20210219-30278-c3cgql.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/ali/Documents/Coding/190425-jekyll-site/vizintel.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 ruby_http_parser.bundle ./.gem.20210219-30278-3e1a2f
