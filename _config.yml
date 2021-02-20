@@ -1,0 +1,12 @@
+include:
+  - _pages # All pages in folder will become html pages in root (due to permalinks)
+
+# https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
+# exclude: [vendor] # unable to build a jekyll site … invalid date
+
+exclude:
+  - vendor
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
