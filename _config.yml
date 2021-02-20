@@ -1,3 +1,7 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
 include:
   - _pages # All pages in folder will become html pages in root (due to permalinks)
 
@@ -31,3 +35,9 @@ collections_dir: my_collections # gather collections inside collections_dir
 collections:
   projects:
     output: true
+
+plugins:
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
