@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article class="grid-project-info">
+	
+	<header class="project-title">
+		<h1 class="type-level-h1">{{ page.name }}</h1>		
+	</header>
+	
+	<section class="project-intro">
+		<main role='main' class="paragraph-normal">
+			{{ content }}
+		</main>
+	</section>
+
+	<aside class="project-detail">
+		<div class="grid-project-details">
+			{% if page.disciplines %}
+				<div class="project-detail-disciplines">
+					<h3 class="title-label">Disciplines</h2>
+					<p>{{ page.disciplines }}</p>
+				</div>
+			{% endif %}
+			{% if page.start_year %}
+				<div class="project-detail-year">
+					<h3 class="title-label">Year</h2>
+					<p>{{ page.start_year }}</p>
+				</div>
+			{% endif %}
+		</div>
+	</aside>
+	
+	<section class="project-artefact">
+		<div class="grid-project-artefact">
+			{% for image in page.images %}
+				<figure>
+					<img class="border" src="{{ image.url | prepend: page.image_serve_path }}" alt="testing image">
+					{% if image.caption %}
+						<figcaption>{{ image.caption }}</figcaption>
+					{% endif %}
+				</figure>
+			{% endfor %}
+		</div>
+	</section>
+
+</article>

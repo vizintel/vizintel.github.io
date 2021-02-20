@@ -1,0 +1,52 @@
+.project-title { grid-area: title; }
+.project-intro { grid-area: intro; }
+.project-detail { grid-area: detail; }
+.project-artefact { grid-area: artefact; }
+
+.grid-project-info {
+  display: grid;
+  grid-template-areas: 
+  	"title" 
+    "intro"
+    "detail" 
+    "artefact";  
+  grid-gap: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .grid-project-info {
+    grid-template-areas: 
+    	"title title title title" 
+    	"intro intro intro detail" 
+    	"artefact artefact artefact artefact";
+    grid-gap: 2rem;
+  }
+}
+
+.grid-project-details {
+	display: grid;
+	grid-gap: 1rem;
+	// grid-auto-rows: minmax(min-content, max-content);
+}
+
+.grid-project-artefact {
+  display: grid;
+  grid-gap: 1rem;
+  // grid-auto-rows: minmax(min-content, max-content);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .grid-project-artefact img {
+    max-width: 80%;
+  }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-gap: 3rem;
+}

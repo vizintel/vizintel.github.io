@@ -1,0 +1,30 @@
+.hero {
+	background: url("/assets/images/hero.jpg") center;
+	// background: url("https://images.unsplash.com/photo-1511920170033-f8396924c348") center;
+	background-size: cover;
+	padding: 4rem 2rem;
+	/* grid styles */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 3rem;
+	align-items: center;
+}
+
+.hero>* {
+	color: white;
+}
+
+.hero>h1 {
+	font-size: 5rem;
+	padding-bottom: 1rem;
+}
+
+.hero>article>p {
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+.hero>article>a {
+	padding: 1rem;
+	margin-top: .75rem;
+}

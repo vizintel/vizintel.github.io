@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// 1. Configuration and helpers
+
+@import "arch71/abstracts/reset";
+@import "arch71/abstracts/variables";
+// @import "abstracts/functions";
+// @import "abstracts/mixins";
+
+// 2. Vendors
+
+@import "arch71/vendors/normalize";
+
+// 3. Base stuff
+
+@import "arch71/base/base";
+@import "arch71/base/fonts";
+@import "arch71/base/typography";
+@import "arch71/base/images";
+// @import "base/helpers";
+
+// 4. Layout-related sections
+
+@import "arch71/layout/wrappers";
+@import "arch71/layout/grid";
+@import "arch71/components/navbar";
+// @import "layout/header";
+// @import "layout/footer";
+// @import "layout/forms";
+// @import "layout/sidebar";
+// @import "layout/navigation";
+
+// 5. Components
+
+@import "arch71/components/card";
+@import "arch71/components/hero";
+// @import "components/button";
+// @import "arch71/components/lists";
+
+// 6. Page-specific styles
+
+// @import "pages/home";
+// @import "arch71/pages/about";
+// @import "arch71/pages/portfolio";
+// @import "arch71/pages/project";
+
+// 7. Themes
+
+// @import "themes/default";
