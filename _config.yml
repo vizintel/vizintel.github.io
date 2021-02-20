@@ -10,3 +10,24 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+collections_dir: my_collections # gather collections inside collections_dir
+collections:
+  projects:
+    output: true

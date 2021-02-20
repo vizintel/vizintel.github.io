@@ -1,0 +1,37 @@
+---
+title: Portfolio
+permalink: /:basename
+redirect_from: /
+---
+<main class="portfolio-grid">
+  
+  <section class="hero">
+    <h1>Simple is hard</h1>
+    <article>
+      <p>I strive for simplicity in my work. Often teams have complex processes and find it hard to deliver value to their
+        customers or end users. One pagers insteads of long reports, dashboards instead of excel sheets and open source
+      technologies instead of proprietary software.</p>
+      <a href="#projects">Browse Projects</a>
+    </article>
+  </section>
+
+  <section class="cards">
+    <ul>
+      {% for project in site.projects %}
+      <li class="card">
+        <div class="img">
+          <img src="https://via.placeholder.com/800x800" alt="">        
+        </div>
+        <div class="text">
+          <h2 class="type-level-h2">
+            <a href="{{ project.url }}">{{ project.name }}</a>
+          </h2>
+          <p class="font-size-body-small">{{ project.summary }}</p>
+          <span class="cta" aria-hidden="true">Read more &rarr;</span>   
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+</main>

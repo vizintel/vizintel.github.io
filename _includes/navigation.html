@@ -1,0 +1,24 @@
+<header id="navbar">
+	<nav class="navbar-container container">
+		
+		<a href="/" class="home-link">
+			<div class="navbar-logo"></div>
+			Ali Rana
+		</a>
+
+		<button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="navbar-menu">
+			<ul class="navbar-links">
+				{% for item in site.data.navigation %}
+				<li class="navbar-item"><a class="navbar-link" href="{{ item.link }}">{{ item.name }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+
+	</nav>
+</header>

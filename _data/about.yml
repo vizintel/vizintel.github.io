@@ -1,0 +1,80 @@
+intro: |
+  Hi, I'm Ali Rana. 
+  I'm an engineer. I love improving processes and I specialise in data analytics.
+
+  The process could be anything. The way to deliver projects. Way to find a good property. Way to improve efficiency in teams. Or even the way to lose weight. What fills my cup is my curiousity in seeking to understand how something really works. Data and empathy are my favourite tools to get there.
+
+  Empathy is knowledge about users or how something, that need improving, gets done. Data is all the data that is relevant for the problem at hand e.g. to measure it or to find patterns.
+  
+  I've worked out way to conceptualise projects that provide most value to my clients and deliver them in ways that have the highest or earliest chances of success.
+
+  I have worked with clients in Education, Information Technology and Telco sectors delivering projects and programs using agile, waterfall or bespoke approaches.
+  
+  I'm particularly interested in working on data analytics, innovation for operational improvements and technology projects. Adopting a user-centric design thinking approach, I design, implement, test and transition data driven projects.
+
+  I aim to bridge the gaps between design, tech, and the business, by working
+  cross-functionally to research, prototype and deliver real products with
+  effective, engaging, and accessible user experiences.
+
+profile-picture: /assets/images/profile-pictures/profile_opt.jpg
+
+experience:
+  - company: Cloud Campus, Deakin University
+    position: Manager Service Delivery & Innovation
+    period: February 2019 - Present
+
+  # - company: Deakin University
+  #   position: Cloud Campus Director (Acting)
+  #   period: October 2019 - February 2020
+
+  - company: Cloud Campus, Deakin University
+    position: Program & Information Manager
+    period: February 2018 - January 2019
+
+  - company: IMA Management & Technology
+    position: Consultant Project Manager
+    period: March 2016 - January 2018
+
+  - company: VIVA Bahrain & Huawei Technologies
+    position: Project Manager & Solution Architect
+    period: Jan 2011 - Dec 2015
+
+education:
+  - course: Two-day User Experience Design Bootcamp
+    place: General Assembly
+    period: 2017
+
+  - course: Master of Engineering (Telecommunications)
+    place: National University of Sciences & Technology, Pakistan
+    period: 2002 - 2004
+
+  - course: Bachelor of Engineering
+    place: University of Engineering & Technology, Lahore, Pakistan
+    period: 1998 - 2002
+
+skills:
+  - User Experience design (UX)
+  - User Interface design (UI)
+  - Graphic design
+  - Cross platform design (Desktop, Native Mobile, responsive, smartwatch, kiosk etc.)
+  - Design libraries and Styleguides
+  - User journey mapping
+  - User interviews and Usability testing
+  - Information Architecture
+  - Wireframing
+  - Interactive prototypes
+  - Contextual inquiry
+
+tools:
+  - Sketch app, Figma
+  - Flinto, Balsamiq, Invision, Zeplin, Marvel app
+  - Adobe Creative Cloud Suite (Photoshop, XD, Illustrator, After Effects...)
+  - HTML
+  - CSS and SASS (SCSS)
+  - jQuery (for prototyping only)
+  - Jekyll
+  - Frontend templating languages (ERB, Handlebars, Blade, Liquid)
+  - Glyphs app, Fontlab, Fontographer
+
+about-site:
+  - 

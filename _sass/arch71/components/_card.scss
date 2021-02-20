@@ -1,0 +1,160 @@
+.card + .card {
+  margin-top: 1.5rem;
+}
+
+@supports (display: grid) {
+  .cards > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+}
+
+.cards > ul {
+  list-style: none;
+}
+
+.card {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.card .img {
+  height: 12rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2rem));
+}
+
+.card .img img {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%
+}
+
+.card .text {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; // grow shrink basis
+}
+
+.card .text a {
+  text-decoration: none;
+}
+
+.card .text p {
+  max-width: 60ch;
+  padding: 10px;
+}
+
+.card .text a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.card:focus-within, .card:hover {
+  box-shadow: 0 0 0 0.25rem;
+}
+
+.card:focus-within .text a:focus {
+  text-decoration: none;
+}
+
+.cta {
+  padding: 0.75rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.card .text > * + * {
+  margin-top: 0.75rem;
+}
+
+
+// This moves the Read More down to bottom as well as add some space above
+.card .text :last-child {
+  margin-top: auto;
+}
+.card .text :nth-last-child(2) {
+  margin-bottom: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
+// .card {
+//   display: grid;
+//   // grid-template-rows: max-content 200px 1fr;
+//   border: 1px solid #999;
+//   border-radius: 3px;
+// }
+
+// .card > header {
+//   color: red;
+//   // height: 20px;
+//   // overflow: hidden;
+// }
+
+// .card > figure {
+//   height: 220px;
+//   overflow: hidden;
+//   // border-top-left-radius: .5rem;
+//   // border-top-right-radius: 0.5rem;
+//   position: relative; // https://css-tricks.com/absolute-positioning-inside-relative-positioning/
+// }
+
+// .card > figure > img {
+//   position: absolute;
+//   object-fit: cover;
+
+//   // max-width: 100%;
+//   width: 100%;
+
+//   // height: 100%;
+//   max-height: 100%;
+// }
+
+// .card > figure > figcaption {
+//   position: absolute; // https://css-tricks.com/absolute-positioning-inside-relative-positioning/
+//   bottom: 0; // https://css-tricks.com/absolute-positioning-inside-relative-positioning/
+//   background-color: rgba(black, 0.7);
+//   width: 100%;
+//   color: white;
+//   padding: 0.75rem;
+//   font-size: $font-size-body-tiny;
+// }
+
+// .card > p {
+//   font-size: $font-size-body-small;
+//   line-height: $line-height-widest;
+//   padding: 1rem 0.75rem;
+//   color: #666666;
+// }
+
+// .card > a {
+//   background-color: goldenrod;
+//   text-decoration: none;
+//   color: white;
+//   border-radius: .25rem;
+//   text-align: center;
+//   display: inline-block;
+//   transition: all .3s;
+//   padding: .5rem 1rem;
+//   margin: .5rem;
+// }
+
+// .card > a:hover {
+//   opacity: .6;
+// }
