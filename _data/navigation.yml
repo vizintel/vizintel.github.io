@@ -1,9 +1,9 @@
 # .html at the end is included by default
 - name: About
-  link: /about/
+  link: /about.html
 - name: Portfolio
-  link: /portfolio/
+  link: /portfolio.html
 - name: Blog
-  link: /blog/
+  link: /blog.html
 - name: Contact
-  link: /contact/
+  link: /contact.html
