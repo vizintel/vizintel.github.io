@@ -2,11 +2,11 @@
 layout: default
 ---
 <article class="grid-project-info">
-	
+
 	<header class="project-title">
-		<h1 class="type-level-h1">{{ page.name }}</h1>		
+		<h1 class="type-level-h1">{{ page.name }}</h1>
 	</header>
-	
+
 	<section class="project-intro">
 		<main role='main' class="paragraph-normal">
 			{{ content }}
@@ -17,19 +17,19 @@ layout: default
 		<div class="grid-project-details">
 			{% if page.disciplines %}
 				<div class="project-detail-disciplines">
-					<h3 class="title-label">Disciplines</h2>
+					<h3 class="title-label">Disciplines</h3>
 					<p>{{ page.disciplines }}</p>
 				</div>
 			{% endif %}
 			{% if page.start_year %}
 				<div class="project-detail-year">
-					<h3 class="title-label">Year</h2>
+					<h3 class="title-label">Year</h3>
 					<p>{{ page.start_year }}</p>
 				</div>
 			{% endif %}
 		</div>
 	</aside>
-	
+
 	<section class="project-artefact">
 		<div class="grid-project-artefact">
 			{% for image in page.images %}
